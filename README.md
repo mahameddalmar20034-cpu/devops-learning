@@ -1,6 +1,6 @@
 # Linux Fundamentals — Study Guide & Bandit Walkthrough
 
-Clean, copy‑pasteable notes with correct commands and brief explanations. Built from real troubleshooting you’ve done (nmap `-sV`, `openssl s_client -quiet`, strict SSH key perms, SUID/SGID).
+
 
 ---
 
