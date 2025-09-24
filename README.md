@@ -248,7 +248,7 @@ ls -l
 - SSH “Permission denied (publickey)” → wrong key/user/perms/path
 - `nmap -sV` = service/version detection (helps spot TLS endpoints)
 
-## 62) CLI Shortcuts
+##  CLI Shortcuts
 - `history` → list commands from session, numbered; re-run with `!<num>` (e.g. `!220`)
 - `Ctrl+R` → reverse search history; press repeatedly to cycle matches
 - `Enter` → execute found command; `Ctrl+J` → insert at prompt without executing
