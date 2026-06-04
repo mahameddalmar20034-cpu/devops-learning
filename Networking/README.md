@@ -85,7 +85,31 @@
 - The TCP/IP model is a simpler more practical model consisting of 4 layers.
 ### Layer 1 - Network (access) or link
 
--
+- This layer combines OSI layer 1 and layer 2.This is physical hardware aswell as local delivery (cables,switches MAC adresses wifi).This gets the data across the local network.
+
+### Layer 2 - Internet
+
+- This consists of the IP adresses and the routers.It gets the data across networks handling routing from source to destination.
+
+### Layer 3 - Transport
+- This consists of TCP and UDP as well as the ports.It handles reliable or fast delivery.
+
+### Layer 4 - Application
+- This combines OSI layers 5,6 and 7.As well as all the protocols you interact with. HTTP, SSH, DNS and email ie the actual applications.
+
+
+## DNS
+- DNS stands for domain name system its a system that translates human readable names into IP adress. It is much easier for the human brain to remember.
+- DNS exists not in a signle system but rather a distrubuted sytem.This consists of thousands of servers across the globe working together.
+- If you were to search a domain the browser would need an IP adress to connect and thus the DNS behaves as the internet's phonebook.
+
+## How does DNS work
+1. When the browser searches a domain it checks locally to see if it is inside of it's own cache.If not there it asks the operating system as the OS has its own cache.If not found it then moves on.
+2. It now asks the resolver.This device sends a query to a DNS resolver.This is ran by your ISP or a public one.
+3. If the resolver doesnt know the IP it begins at the top going to the root server.The root server doesnt actualy know but it does what handles the TLD (top level domain) so for google.com it wouldnt know the ip but it does know to send the resolver to the designated .com TLD server.
+4. The resolver asks the TLD server.That TLD server then points to the google authorative server.
+5. The resolver now requests the authorative server this is googles actual own dns server.The server hands over the A-record.The Resolver now has the IP it caches it for next time and sends it back to your device.Your browser then connects to your IP.
+- This is all done in milliseconds.
 
 
  
