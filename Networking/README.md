@@ -60,7 +60,32 @@
 - This is the actual hardware.This consists of the cables ,wifi and electrical signals.If the ethernet is unplugged the layer is broken.
 
 ### Layer 2: Data link
-- This 
+- This the layer that handles communication within a local network.This is where the MAC adresses lives.Switches also operate here.Data is packaged into frames.It gets the right device on the LAN.
+
+### Layer 3: Network
+- Handles communication across networks.This is where IP adresses live aswell routers. Data is packaged into packets.It figures out the path from your device to a server on the other side.
+
+### Layer 4: Transport
+
+-Handles reliable (TCP) or fast (UDP) delivery.Ports live here.It is broken into segments and manages flow and control and makes sure things arrive properly. (FOR TCP)
+
+### Layer 5: Session
+
+- Manages the connections between applications.Opens maintains and closes sessions.Keeps conversations seperate.
+
+### Layer 6: Presentiation
+- This part handles data formatting and encryption.It translates the data into a format the application can understand.This is where SSL/TLS encryption occurs.
+
+### Layer 7: Application
+- These are the things that you interact with. HTTP,SSH,DNS and email.This is the actual apps and protocls you use.
+
+## TCP/IP model
+
+-This OSI model is more of a theoretical teaching framework solely to solidify understanding.
+- The TCP/IP model is a simpler more practical model consisting of 4 layers.
+### Layer 1 - Network (access) or link
+
+-
 
 
  
