@@ -182,8 +182,8 @@ NS record:Also known as Name server.It informs you about which domain server is 
     -It is what translates the private ips of your decices to your routes singular public IP
 
     ###Types of NAT
-    1.Static nat: This means that one private ip always maps to one public IP.This means each time a device sends traffic it uses the same public IP.
-    2.Dynamic NAT: This uses a pool of public Ips.When a device needs to go live it gets assigned an IP from the pool.when it is no longer need it is sent back to the pool.
+    - Static nat: This means that one private ip always maps to one public IP.This means each time a device sends traffic it uses the same public IP.
+    -Dynamic NAT: This uses a pool of public Ips.When a device needs to go live it gets assigned an IP from the pool.when it is no longer need it is sent back to the pool.
     3.PAT (Port Adress translation):This what your home router uses.It uses the ports where two devices send a request from different Ips.The router translates both of the same public Ips but keeps track of the source of the ports.
     This means when the responses come back the router checks the port and sends it to the right device.
 
