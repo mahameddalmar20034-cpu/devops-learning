@@ -111,6 +111,64 @@
 5. The resolver now requests the authorative server this is googles actual own dns server.The server hands over the A-record.The Resolver now has the IP it caches it for next time and sends it back to your device.Your browser then connects to your IP.
 - This is all done in milliseconds.
 
+## A-records
+Here are different types of A records:
+A-record: This is the standard and most common it maps a domain to an Ipv4 adress
+AAAA record: This is similar to an A record but is for IPV6 adresses.It has 4 A's due to IPv6 being four times larger than IPv4
+CNANME record: THis is an alias it points one domain to another domain
+MX record:Also known as Mail exchange. it tells the email servers where to deliver mail for that domain.
+TXT record: THis is just used for verification and other info.COmpanies use it prove domain ownership when you connecct.
+NS record:Also known as Name server.It informs you about which domain server is authorative for that domain.
+
+
+## Routing: 
+-THis is essentially how data finds its way across networks.
+-It doesnt go in a straight line rather it hops multiple routers with each deciding where to send it next.
+- Each router contains a routing table that entails directions for the router depending on the network and sends out a certain port.
+- This is completed by thr router looking at the destination IP and checking the router table forwading it onto the next hop.
+
+  ## Static routing vs Dynamic Routing
+  ### Static routing
+  - This is manually configured by a human.
+  - It is instructed by to reach a certain network (and IP) and send traffic out of the desired port.
+  - This allows for simplicity and predictable networking.
+  - However it is unable to adapt if a link goes down or traffic fails
+  - It must be updated manually
+  - It is mainly used in small networks or fixed specific paths
+ 
+    ## Dynamic routing
+    -This is the routes communicating with each other to fingure out the most optimal path
+    -If a link goes down it is able to recalculate to find an alternative path
+    -It is self healing and reliable
+    -Used in larger networks like the internet
+
+    ### Routing protocols
+    Dynamic routing displated that routers communicate with each other sharing information about which networks they are able to reach and how good that path is.Routing protocols are the rules for how they operate this.
+    ###OSPF
+    -Stands for Open Shortest Path First
+    -Used in organisations networks
+    -Each router builds a complete map of the network and calculates the shortest path to each destination
+    -Able to adaps due to errors
+    -They also take into account costs (based on link speed)
+    -This means a fast connection has a lower cost thatn a slow connection
+    -Used by companies,universities and large internal networks
+    ###BGP
+  - Stands for Border Gateway Protocol
+  - Used between organisations
+  - This is what runs the internet
+  - Google,Your isp and amazon all have networks this is how they communicate between each other
+  - This is how speperate networks tell each other that it can reach that certain IP adress
+  - Does not take into account the shortest path but rather prioritises policies
+  - The policies are based on trust and business relationship.
+  - Internet outtages can occur due to BGP misconfiguration.In where organisations adverrtised the incorrect routes and broken paths effecting millions across the internet
+ 
+    ### Subnetting and CIDR
+
+    
+ 
+    
+
+    
 
  
 
