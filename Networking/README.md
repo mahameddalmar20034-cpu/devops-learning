@@ -168,14 +168,14 @@ NS record:Also known as Name server.It informs you about which domain server is 
   - The policies are based on trust and business relationship.
   - Internet outtages can occur due to BGP misconfiguration.In where organisations adverrtised the incorrect routes and broken paths effecting millions across the internet
  
-    ### Subnetting 
+    ## Subnetting 
     Subnets are useful for these reasons:
     -Security:It enables you to keep departments seperate
     -Performance:Less broadcast traffic clogging things up
     -Organisation:It is easier to manage small chunks
     Subnetting allows you to carve one big network into smaller pieces
 
-    ###CIDR
+    ##CIDR
 
     An example of a CIDR notation is 192.168.1.0/24
     -The /24 tells you how many bits are in the network portion
@@ -184,11 +184,11 @@ NS record:Also known as Name server.It informs you about which domain server is 
     -This means there are 254 usable adress not 256 this is because there are two reserved adresses
     -One adress to identifiy the network and the other acts as the broadcast adress used to send info to all devices on that network.
 
-    ###NAT
+    ##NAT
     -This stands for network adress translation
     -It is what translates the private ips of your decices to your routes singular public IP
 
-    ###Types of NAT
+    ##Types of NAT
    
    - Static nat: This means that one private ip always maps to one public IP.This means each time a device sends traffic it uses the same public IP.
     -Dynamic NAT: This uses a pool of public Ips.When a device needs to go live it gets assigned an IP from the pool.when it is no longer need it is sent back to the pool.
