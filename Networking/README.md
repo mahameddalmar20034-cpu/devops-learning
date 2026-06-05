@@ -190,6 +190,15 @@ NS record:Also known as Name server.It informs you about which domain server is 
     ##Troubleshooting tools
     These are the diagnost commands used when something isnt working on a network:
     Ping: Texts if you can reach a destination.It sensd a small packet and waits for the reply. ``` ping google .com ```
+          If it times out then something is blocking the path, either the server down, the internet is broken or the firewall is blocking it.A slow response time hints at a slow connection.
+
+    Traceroute: This shows the path the traffic takes. ``` traceroute google.com``` it shows a list of routers your packet passes through.If one hop times out or show latency thats where the problem is.
+
+    nslookup:This tests the DNS.It reqests the IP for that specific domain. ```nslookup google.com```.If no IP is returned it might be that the DNS server may be down or misconfigured.
+
+    dig: This is the same as nslookup but is much more detailed.It shows the DNS response including record types, TTL and which server has answered.```dig google.com```.This is mainly used to see exactly what DNS is returning.
+ 
+    
     
     
     
