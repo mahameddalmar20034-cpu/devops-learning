@@ -162,8 +162,36 @@ NS record:Also known as Name server.It informs you about which domain server is 
   - The policies are based on trust and business relationship.
   - Internet outtages can occur due to BGP misconfiguration.In where organisations adverrtised the incorrect routes and broken paths effecting millions across the internet
  
-    ### Subnetting and CIDR
+    ### Subnetting 
+    Subnets are useful for these reasons:
+    -Security:It enables you to keep departments seperate
+    -Performance:Less broadcast traffic clogging things up
+    -Organisation:It is easier to manage small chunks
+    Subnetting allows you to carve one big network into smaller pieces
 
+    ###CIDR
+    An example of a CIDR notation is 192.168.1.0/24
+    -The /24 tells you how many bits are in the network portion
+    -The total is 32 bits for an IPv4 adress.
+    -This means that there are 24 bits for network and 8 bits for hosts
+    -This means there are 254 usable adress not 256 this is because there are two reserved adresses
+    -One adress to identifiy the network and the other acts as the broadcast adress used to send info to all devices on that network.
+
+    ###NAT
+    -This stands for network adress translation
+    -It is what translates the private ips of your decices to your routes singular public IP
+
+    ###Types of NAT
+    1.Static nat: This means that one private ip always maps to one public IP.This means each time a device sends traffic it uses the same public IP.
+    2.Dynamic NAT: This uses a pool of public Ips.When a device needs to go live it gets assigned an IP from the pool.when it is no longer need it is sent back to the pool.
+    3.PAT (Port Adress translation):This what your home router uses.It uses the ports where two devices send a request from different Ips.The router translates both of the same public Ips but keeps track of the source of the ports.
+    This means when the responses come back the router checks the port and sends it to the right device.
+
+    ##Troubleshooting tools
+    These are the diagnost commands used when something isnt working on a network:
+    Ping: Texts if you can reach a destination.It sensd a small packet and waits for the reply. ``` ping google .com ```
+    
+    
     
  
     
