@@ -122,13 +122,15 @@ NS record:Also known as Name server.It informs you about which domain server is 
 
 
 ## Routing: 
+
 -THis is essentially how data finds its way across networks.
 -It doesnt go in a straight line rather it hops multiple routers with each deciding where to send it next.
 - Each router contains a routing table that entails directions for the router depending on the network and sends out a certain port.
 - This is completed by thr router looking at the destination IP and checking the router table forwading it onto the next hop.
 
   ## Static routing vs Dynamic Routing
-  ### Static routing
+
+   ### Static routing
   - This is manually configured by a human.
   - It is instructed by to reach a certain network (and IP) and send traffic out of the desired port.
   - This allows for simplicity and predictable networking.
@@ -143,16 +145,20 @@ NS record:Also known as Name server.It informs you about which domain server is 
     -Used in larger networks like the internet
 
     ### Routing protocols
+  
     Dynamic routing displated that routers communicate with each other sharing information about which networks they are able to reach and how good that path is.Routing protocols are the rules for how they operate this.
+
     ###OSPF
-    -Stands for Open Shortest Path First
+
+     -Stands for Open Shortest Path First
     -Used in organisations networks
     -Each router builds a complete map of the network and calculates the shortest path to each destination
     -Able to adaps due to errors
     -They also take into account costs (based on link speed)
     -This means a fast connection has a lower cost thatn a slow connection
     -Used by companies,universities and large internal networks
-    ###BGP
+
+     ###BGP
   - Stands for Border Gateway Protocol
   - Used between organisations
   - This is what runs the internet
@@ -170,6 +176,7 @@ NS record:Also known as Name server.It informs you about which domain server is 
     Subnetting allows you to carve one big network into smaller pieces
 
     ###CIDR
+
     An example of a CIDR notation is 192.168.1.0/24
     -The /24 tells you how many bits are in the network portion
     -The total is 32 bits for an IPv4 adress.
@@ -182,7 +189,8 @@ NS record:Also known as Name server.It informs you about which domain server is 
     -It is what translates the private ips of your decices to your routes singular public IP
 
     ###Types of NAT
-    - Static nat: This means that one private ip always maps to one public IP.This means each time a device sends traffic it uses the same public IP.
+   
+   - Static nat: This means that one private ip always maps to one public IP.This means each time a device sends traffic it uses the same public IP.
     -Dynamic NAT: This uses a pool of public Ips.When a device needs to go live it gets assigned an IP from the pool.when it is no longer need it is sent back to the pool.
     3.PAT (Port Adress translation):This what your home router uses.It uses the ports where two devices send a request from different Ips.The router translates both of the same public Ips but keeps track of the source of the ports.
     This means when the responses come back the router checks the port and sends it to the right device.
