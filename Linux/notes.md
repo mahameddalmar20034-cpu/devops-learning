@@ -30,4 +30,12 @@
 `&`- used to run the process in the back so the terminal is free for use
 
 
+## Text processing 
+
+- The following command is used in the task to parse /etc/passwd to list all users with /bin/bash as their shell.
+
+`cat /etc/passwd | grep /bin/bash | awk -F: '{print $1}'`
+the option -F is used as it tells awk that the column seperate is a colon rather than the standard space
+
+
  
