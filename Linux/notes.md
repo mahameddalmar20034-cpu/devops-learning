@@ -8,6 +8,6 @@
 ### Moving Files
 `mv Networking/README.md Linux/README.md` - Used to move files in this case as well as renamnig files
 `touch notes.md` - creates a file named notes.md
-`rm -r Linux/` -  usually dletes a file with the -r option it deletes the directory and everything within it
+`rm -r Linux/` -  usually deletes a file with the -r option it deletes the directory and everything within it
 
 
