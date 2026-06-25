@@ -20,9 +20,14 @@
 **This changers the ownership to a new group**
 `sudo chown :netdev Day1.txt`
 **This lists the file with all of its permissions and details** `
+`ls -l Day1.txt`  
 
 
+## Process Management
+`ps aux`- used to state the processes being used and the PID numbers and more
+`ps aux | grep ping`- show the specific details for that process
+`kill <PID>` - ends the process
+`&`- used to run the process in the back so the terminal is free for use
 
-`ls -l Day1.txt`    - 
 
  
