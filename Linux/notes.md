@@ -52,7 +52,16 @@ When SSHing into a remote server sometimes it is ran on on a different port rath
 
 
 Level 0 -> Level 1
-Goal 
+**Challenge**
+Find the password for the next level in a readme file
+**Solution**
+`cat README`
+**Password**
+6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR
+**Explanation**
+The  README file contains the password .The command was used to reveal its contents.
+**What I learned**
+`cat` is a good command for dealing with content within files
 
 
 
