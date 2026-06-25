@@ -35,7 +35,21 @@
 - The following command is used in the task to parse /etc/passwd to list all users with /bin/bash as their shell.
 
 `cat /etc/passwd | grep /bin/bash | awk -F: '{print $1}'`
-the option -F is used as it tells awk that the column seperate is a colon rather than the standard space
+the option -F is used as it tells awk that the column seperate is a colon rather than the standard space.
+
+
+# OverTheWire Bandit game
+ ## Level 0 
+
+Goal:SSH into the server
+`ssh -p 2220  bandit0@bandit.labs.overthewire.org`
+
+
+
+Level 0 -> Level 1
+Goal 
+
+
 
 
  
