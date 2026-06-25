@@ -64,6 +64,20 @@ The  README file contains the password .The command was used to reveal its conte
 `cat` is a good command for dealing with content within files
 
 
+Level 1-> Level 2
+**Challenge:**
+The password is stored in a file called "-"
+**Solution:**
+`cat ./-`
+**Explanation**
+The command doesnt recognise the "-" alone so by writing its parent directory alongside it. Where "." is the directory we are in followed by "/-" the terminal recognises what file is being discussed and so when combining this with cat reveals its content.
+**What I Learned**
+Using "./" before a strange name of a file allows the terminal to determine what you are talking about in the case of confusion
+**Password**
+PK8fYLZg2hnHSz83plBL1iEPKdD3QToB
+
+
+
 
 
  
