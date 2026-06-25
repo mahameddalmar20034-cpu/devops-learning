@@ -14,9 +14,9 @@
 
 
 
- `#!/bin/bash      
-chmod +x Day1.txt   # This makes it executable
-./Day1.txt          #This executes a file
-sudo chown :netdev Day1.txt #This changers the ownership to a new group
-ls -l Day1.txt   #This lists the file with all of its permissions and details `
+ `#!/bin/bash`     
+`chmod +x Day1.txt`   # This makes it executable
+`./Day1.txt`         #This executes a file
+`sudo chown :netdev Day1.txt` #This changers the ownership to a new group
+`ls -l Day1.txt`   #This lists the file with all of its permissions and details `
  
