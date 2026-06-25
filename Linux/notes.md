@@ -11,3 +11,15 @@
 `rm -r Linux/` -  usually deletes a file with the -r option it deletes the directory and everything within it
 
 
+
+
+#!/bin/bash
+
+chmod +x Day1.txt
+
+./Day1.txt
+
+
+sudo chown :netdev Day1.txt
+
+ls -l Day1.txt
