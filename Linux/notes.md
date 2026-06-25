@@ -12,11 +12,14 @@
 
 ## Script for changing ownership and permissions
 
-
-
  `#!/bin/bash`     
-`chmod +x Day1.txt`   -This makes it executable
-`./Day1.txt`         -This executes a file
-`sudo chown :netdev Day1.txt` -This changers the ownership to a new group
-`ls -l Day1.txt`    - This lists the file with all of its permissions and details `
+**This makes it executable**
+`chmod +x Day1.txt`
+**This executes the file**
+`./Day1.txt`
+**This changers the ownership to a new group**
+sudo chown :netdev Day1.txt`
+**This lists the file with all of its permissions and details** `
+`ls -l Day1.txt`    - 
+
  
