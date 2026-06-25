@@ -39,10 +39,15 @@ the option -F is used as it tells awk that the column seperate is a colon rather
 
 
 # OverTheWire Bandit game
- ## Level 0 
-
-Goal:SSH into the server
+ ## Level 0
+ **Challenge**
+SSH into the server
+**Solution**
 `ssh -p 2220  bandit0@bandit.labs.overthewire.org`
+**Explanation**
+Since the main port is blocked using the  -p option specifies the port that is open and hence can sshed into.
+**What I learned**
+When SSHing into a remote server sometimes it is ran on on a different port rather than the usual port 22.By using the -p option it allows you to tactically specify which port to enter.
 
 
 
