@@ -18,8 +18,11 @@
 **This executes the file**
 `./Day1.txt`
 **This changers the ownership to a new group**
-sudo chown :netdev Day1.txt`
+`sudo chown :netdev Day1.txt`
 **This lists the file with all of its permissions and details** `
+
+
+
 `ls -l Day1.txt`    - 
 
  
