@@ -10,16 +10,13 @@
 `touch notes.md` - creates a file named notes.md
 `rm -r Linux/` -  usually deletes a file with the -r option it deletes the directory and everything within it
 
+## Script for changing ownership and permissions
 
 
 
-#!/bin/bash
-
-chmod +x Day1.txt
-
-./Day1.txt
-
-
-sudo chown :netdev Day1.txt
-
-ls -l Day1.txt
+ `#!/bin/bash      
+chmod +x Day1.txt   # This makes it executable
+./Day1.txt          #This executes a file
+sudo chown :netdev Day1.txt #This changers the ownership to a new group
+ls -l Day1.txt   #This lists the file with all of its permissions and details `
+ 
