@@ -119,6 +119,14 @@ Level 5-> Level 6
 **Challenge**
 The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties.
 **Solution**
+find . -type f -size 1033c ! -executable  -exec file {} \; | grep text
+**Explanation**
+So a long find command with many options was used to  pinpoint that exact file.`-type f` filters for the file, `-size 1033` filters for those that are 1033 bytes in size, `!` means not so here it means not executable.The last part of the command uses execute the file command to find the types of file that have survived the options so far. `{}` is where the file name is subsituted. `\ ` is used to end the command and the semi colon is used to clarify that to the kernel that the line has ended.This is all piped for the output to only show the ones that have text.
+**What I have learned**
+You can chain options to narrow down and find what you need depending on their characteristics.Piping can be used to filter for what you exactly need.`-exec <command> {} \;` is used to depending on what is found to execute another command.
+**Password**
+pXa26xhMWaC2SvDotA4r9EgZkulOeSBW
+
 
 
 
