@@ -127,6 +127,27 @@ You can chain options to narrow down and find what you need depending on their c
 **Password**
 pXa26xhMWaC2SvDotA4r9EgZkulOeSBW
 
+Level 6-> Level 7
+**Challenge**
+The password for the next level is stored somewhere on the server and has all of the following properties
+**Solution**
+find / -type f -user bandit7 -group bandit6 -size 33c 2&>/dev/null
+**Explanation**
+Using the find command to filter down to the exact group permissions.The last part redirects all errors only leaving those succesful outputs.
+**What I have Learned**
+Redirecting errors is handy for filtering down to take only what you need
+**Password**
+Bmnnvf82KzQlfxgAI2d1zYbr1u9pr3E3
+
+Level 7 -> Level 8
+
+
+
+
+
+
+
+
 
 
 
