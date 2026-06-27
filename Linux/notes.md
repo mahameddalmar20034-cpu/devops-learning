@@ -77,6 +77,38 @@ Using "./" before a strange name of a file allows the terminal to determine what
 PK8fYLZg2hnHSz83plBL1iEPKdD3QToB
 
 
+Level 2-> Level 3
+**Challenge**
+The password for the next level is stored in a file called --spaces in this filename-- located in the home directory
+**Solution**
+cat ./"--spaces in this filename--"
+**Explanation**
+The weird syntax meant the cat command didnt recognise the unique name so by combining "./" to show it is a file combine with speech marks to take into account that the spaces in the name is part of it and not seperate.
+**What I learned**
+By using "./" to specify it is file in a diretory aswell as speech marks to highlight where the name begins and ends you can overcome the commands confusion.
+**Password**
+7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
+
+Level 3-> Level 4
+**Challenge**
+The password for the next level is stored in a hidden file in the inhere directory.
+**Solution**
+ls -a
+cat "...Hiding-From-You"
+**Explanation**
+The file is hidden using the `-a` option reveals hidden files when running the `ls` command.The speech marks and then used due to the weird syntax of the name to ensure clarification to the terminal.
+**What I learned**
+There are sometimes hidden files with a directory that isnt visible normally.
+**Password**
+xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
+
+Level 4 -> Level 5
+**
+
+
+
+
+
 
 
 
