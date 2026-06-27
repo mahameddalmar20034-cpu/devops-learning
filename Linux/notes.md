@@ -115,6 +115,12 @@ The command file can show you what type of file it is.Globus `*` can be used as 
 **Password**
 6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG
 
+Level 5-> Level 6
+**Challenge**
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties.
+**Solution**
+
+
 
 
 
