@@ -103,7 +103,17 @@ There are sometimes hidden files with a directory that isnt visible normally.
 xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
 
 Level 4 -> Level 5
-**
+**Challenge**
+The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
+**Solution**
+`file ./*`
+`cat ./"-file07"`
+**Explanation**
+The only human readable file uses ascii text.To identify this the command `file` which checks the type of file combined with the globus checks all of the files in the directory.
+**What I learned**
+The command file can show you what type of file it is.Globus `*` can be used as a shortcut to check all files simultaneously.
+**Password**
+6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG
 
 
 
