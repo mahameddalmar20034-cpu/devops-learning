@@ -143,6 +143,17 @@ Level 7 -> Level 8
 **Challenge**
 The password for the next level is stored in the file data.txt next to the word millionth
 **Solution**
+grep Millonth data.txt
+**Explanation**
+The grep command allows you to find a specific word and outputs the line it is in
+**What I have learned**
+Grep can be used to locate certain specific words in a file
+**Password**
+VR1ljMayciFxbnUokuQmJFw6QC9VKtub
+
+
+Level 8->Level 9
+
 
 
 
