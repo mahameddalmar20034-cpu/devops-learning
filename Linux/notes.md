@@ -190,6 +190,23 @@ Encoding and decoding can be used to hide important data.
 pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro
 
 Level 11 -> Level 12
+**Challenge**
+The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+**Solution**
+cat data.txt |    tr 'A-Za-z' 'N-ZA-Mn-za-m'
+**Explanation**
+The command of cat is used since tr doesnt output the files data.  `tr` is used to shift the words down 13 positions to decode the password.
+**What I have learned**
+The order and letter you begin with matters as beginning with A here would get you the wrong output.
+**Password**
+GROozWPO8QyN0mGrjUkID0WCYkZiQxrN
+
+
+
+
+Level 13 -> Level 14
+**Challenge**
+
 
 
 
