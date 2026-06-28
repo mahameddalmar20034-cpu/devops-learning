@@ -248,22 +248,30 @@ The password for the next level can be retrieved by submitting the password of t
 **Explanation**
 First the password for level 14 is optained from the etc directory.Then instructions are given to submit the password to localhost.The `nc` command is then used and the password is submitted giving the password to next level.
 **What I have learned**
-Sumitting a password to a server means that a command is needed to send data to a server.A common tool used is net cat .When connected you can send whatever.The data was submitted and whatever was listenign on the port recognised the correct handshake and returned data 
+Sumitting a password to a server means that a command is needed to send data to a server.A common tool used is net cat .When connected you can send whatever.The data was submitted and whatever was listening on the port recognised the correct handshake and returned data 
 .**Password**
 pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7
 
 Level 15-> Level 16
-
-
-
-
-
-
-
-
-
+**Challenge**
+The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL/TLS encryption.
+**Solution**
+`openssl s_client -connect localhost:30001`
+**Explanation**
+The command for SSL/TLS encryption  is `openssl` and as the client making the connection we use `s_client`.The option of `-connwct` is used to input the host and the port in order to conenect.The password is then submitted and the server listening on the port sends back the password.
+**What I have learned**
+Commands can have subcommands tailored to the need at hand.There is always a service listening on the port on the server so when you connect to the port on the server the service is waitiing for a specific handshake to hand over the specific data.
 **Password**
-pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7
+kS0Hf0u5HiXFwKMKFqXvPdOTNGGa0X8V
+
+Level 16 -> Level 17
+
+
+
+
+
+
+
 
 
 
