@@ -204,8 +204,29 @@ GROozWPO8QyN0mGrjUkID0WCYkZiQxrN
 
 
 
+Level 12 -> Level 13
+**Challenge**
+The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed.
+**Solution**
+`mktemp -d`
+`xxd -r`
+`/tmp/tmp.0n9nXcwFlq`
+`mv data6.bin data6.gz`
+`gunzip data6.gz`
+mv `Stage1 stage1.bz2`
+`bunzip2 staeg1.bz2`
+`tar -xvf stage1`
+**Explanation**
+First a temporary directory is made to create files.First it was hexdumped so it needed to be converted into readable form.Then there was multiple layers of bzip, gzip and tar archive files that needed to be unzipped.
+**What I have learned**
+Files can be archived and zipped behind multiple layers for storage.
+**Password**
+qQYQiHOBPR8zR61qxYqX45quvihF2uzk
+
 Level 13 -> Level 14
 **Challenge**
+The password for the next level is stored in /etc/bandit_pass/bandit14 and can only be read by user bandit14.
+
 
 
 
