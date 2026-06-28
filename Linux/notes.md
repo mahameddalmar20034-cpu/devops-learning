@@ -237,6 +237,16 @@ You can copy keys or information from a server with sshing in fully.SSH key will
 
 
 Level 14-> Level 15
+**Challenge**
+The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
+**Solution**
+
+
+
+
+**Password**
+aaWecNkG4FhxJQxz07uiwzVP6bJiYS65
+
 
 
 
