@@ -153,6 +153,21 @@ VR1ljMayciFxbnUokuQmJFw6QC9VKtub
 
 
 Level 8->Level 9
+**Challenge**
+The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+**Solution**
+sort data.txt | uniq -u
+**Explanation**
+So `sort` puts all of the lines in order this is paired with `uniq -u` which removes any lines that repeat more than once.
+**What I have learned**
+You must pair them together starting with sort so that uniq can see which lines repeat otherwise it just sees them as not repeating but rather different patterns.
+**Password**
+EjmOSvuAu7sGAHqHVcBDPirRe9T03kxl
+
+
+Level 9->Level 10
+
+
 
 
 
