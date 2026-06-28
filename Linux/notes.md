@@ -234,18 +234,37 @@ chmod 400 sshkey.private
 The ssh key was given but it could be only used to access the level from outside the server from my local machine.`scp` is the ssh of copying.It was used to copy the key to my local machine.They keys permissions were changed to 400 to satisfy ssh.Then this key was used with the `i` option which allows for private keys to access the next level.
 **What I learned**
 You can copy keys or information from a server with sshing in fully.SSH key will throw away and not use a key that is too open in which it is too acessible so make sure to check permissions on the keys.
+**Password**
+aaWecNkG4FhxJQxz07uiwzVP6bJiYS65
 
 
 Level 14-> Level 15
 **Challenge**
 The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
 **Solution**
+`cd etc/`
+`ls | grep bandit14`
+`nc localhost 3000`
+**Explanation**
+First the password for level 14 is optained from the etc directory.Then instructions are given to submit the password to localhost.The `nc` command is then used and the password is submitted giving the password to next level.
+**What I have learned**
+Sumitting a password to a server means that a command is needed to send data to a server.A common tool used is net cat .When connected you can send whatever.The data was submitted and whatever was listenign on the port recognised the correct handshake and returned data 
+.**Password**
+pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7
+
+Level 15-> Level 16
+
+
+
+
+
 
 
 
 
 **Password**
-aaWecNkG4FhxJQxz07uiwzVP6bJiYS65
+pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7
+
 
 
 
