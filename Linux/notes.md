@@ -226,6 +226,18 @@ qQYQiHOBPR8zR61qxYqX45quvihF2uzk
 Level 13 -> Level 14
 **Challenge**
 The password for the next level is stored in /etc/bandit_pass/bandit14 and can only be read by user bandit14.
+**Solution**
+`scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private .`
+chmod 400 sshkey.private
+`ssh -p 2220 -i sshkey.private bandit14@bandit.labs.overthewire.org`
+**Explanation**
+The ssh key was given but it could be only used to access the level from outside the server from my local machine.`scp` is the ssh of copying.It was used to copy the key to my local machine.They keys permissions were changed to 400 to satisfy ssh.Then this key was used with the `i` option which allows for private keys to access the next level.
+**What I learned**
+You can copy keys or information from a server with sshing in fully.SSH key will throw away and not use a key that is too open in which it is too acessible so make sure to check permissions on the keys.
+
+
+Level 14-> Level 15
+
 
 
 
