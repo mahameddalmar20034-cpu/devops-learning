@@ -179,6 +179,18 @@ B0s2khmbT9u0geKuOoVGW3JZKhndE3BG
 
 Level 10-> Level 11
 **Challenge**
+The password for the next level is stored in the file data.txt, which contains base64 encoded data
+**Solution**
+base64 -d data.txt
+**Explanation**
+The `-d` option in `base64` decodes the password.
+**What I have learned**
+Encoding and decoding can be used to hide important data.
+**Password**
+pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro
+
+Level 11 -> Level 12
+
 
 
 
