@@ -294,6 +294,21 @@ OQxXZjELndr90zuhOTDYBEomI0SZITXI
 
 
 Level 18->Level 19
+**Challenge**
+The password for the next level is stored in a file readme in the homedirectory. Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.
+**Solution**
+ssh -p 2220 bandit18@bandit.labs.overthewire.org  cat readme
+**Explanation**
+ssh allows you to run a command as soon as you enter without waiting for the interactive shell to load.This bypasses .bashrc which is used to set up the interactive shell which in this case is coded to also log you out.
+**What I have learned**
+You can run a command alongside ssh without the interactive shell
+**Password**
+KpsOfPkcP7i1FlIExk2QEjyt6dw8dxZI
+
+Level 19->Level 20
+**Challenge**
+
+
 
 
 
@@ -302,7 +317,7 @@ Level 18->Level 19
 
 
 **Password**
-OQxXZjELndr90zuhOTDYBEomI0SZITXI
+
 
 
 
