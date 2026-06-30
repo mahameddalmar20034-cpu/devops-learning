@@ -280,6 +280,31 @@ The option `-quiet` can be used to overrun errors and mistakes.Sometimes you nee
 **Password**
 pWXMAZoxGC8JmDMfmT5MGEsobMM3vnj2
 
+Level 17->Level 18
+**Challenge**
+There are 2 files in the homedirectory: passwords.old and passwords.new. The password for the next level is in passwords.new and is the only line that has been changed between passwords.old and passwords.new
+**Solution**
+`diff passwords.new passwords.old`
+**Explanation**
+The `diff` command is used to compare each file line by line and output the different lines.The first different output was the new password hence the answer.
+**What I have learned**
+The diff command can be used to compare files.It shows you the co-ordinates too so the location can be found.
+**Password**
+OQxXZjELndr90zuhOTDYBEomI0SZITXI
+
+
+Level 18->Level 19
+
+
+
+
+
+
+
+**Password**
+OQxXZjELndr90zuhOTDYBEomI0SZITXI
+
+
 
 
 
