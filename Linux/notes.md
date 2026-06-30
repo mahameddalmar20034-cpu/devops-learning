@@ -299,24 +299,24 @@ The password for the next level is stored in a file readme in the homedirectory.
 **Solution**
 ssh -p 2220 bandit18@bandit.labs.overthewire.org  cat readme
 **Explanation**
-ssh allows you to run a command as soon as you enter without waiting for the interactive shell to load.This bypasses .bashrc which is used to set up the interactive shell which in this case is coded to also log you out.
+ssh allows you to run a command as soon as you enter to only run and command without entering the server. This helps overcome waiting for the interactive shell to load.This bypasses .bashrc which is used to set up the interactive shell which in this case is coded to also log you out.
 **What I have learned**
-You can run a command alongside ssh without the interactive shell
+You can run a command alongside ssh without the interactive shell loading but it only runs a command and doesnt fully ssh you in.
 **Password**
 KpsOfPkcP7i1FlIExk2QEjyt6dw8dxZI
 
 Level 19->Level 20
 **Challenge**
-
-
-
-
-
-
-
-
+To gain access to the next level, you should use the setuid binary in the homedirectory. Execute it without arguments to find out how to use it. The password for this level can be found in the usual place (/etc/bandit_pass), after you have used the setuid binary.
+**Solution**
+`./bandit20-do cat /etc/bandit_pass/bandit20`
+**Explanation**
+Running on ls-l I saw that the owner had setuid permissions and I had the ability "x" to execute the file.What this setuid binary permission does is give lower privellaged users the ability to use the owners permisson to complete privalleged tasks.This ends after running the file and the returns the user back to their original permissions.This was used to access the next level password using bandit20's permissions.
+**What I have learned**
+You can use setuid binary as an ability to access more privilaged users permissions and execute tasks the user wouldn't normally be able to.
 
 **Password**
+4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA
 
 
 
